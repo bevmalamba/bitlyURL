@@ -1,0 +1,24 @@
+<%- include("./partials/header.ejs", {title: "Home page"}) %>
+<div>
+   <form action="/donnees" method="post">
+    <div>
+        <label for="URL">Veuillez entrer votre URL </label>
+    </div>
+    <div>
+        <input type="text" id="URL" name="URLlong" required>
+    </div>
+   <div>
+    <label for="URL">URL Court (Optimal) </label>
+   </div>
+    
+   <div>
+    <input type="text" id="URL" name="URLCourt">
+   </div>
+    
+    <div>
+      <input type="submit" value="Valider votre demande" >
+    </div>
+   </form>
+</div>
+
+<%- include("./partials/footer.ejs") %>
